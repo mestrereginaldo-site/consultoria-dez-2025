@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. [Seu Nome] - Advogado Especialista em Contratos Empresariais | Consultoria R$297</title>
+    <meta name="description" content="Advogado especialista em contratos empresariais. Consultoria jurídica R$297. Análise de contratos, elaboração personalizada, suporte 24/7 via WhatsApp. OAB/XX XXXXXX">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Dr. [Seu Nome] - Advogado Especialista em Contratos">
+    <meta property="og:description" content="Consultoria jurídica R$297. Proteja seu negócio com contratos seguros.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://seusite.com.br">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Dr. [Seu Nome] - Advogado Contratos R$297">
+    <meta name="twitter:description" content="Consultoria jurídica especializada em contratos empresariais">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚖️</text></svg>">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* VARIÁVEIS E RESET */
+        :root {
+            --primary: #1E3A8A; /* Azul jurídico profissional */
+            --primary-dark: #1E40AF;
+            --primary-light: #3B82F6;
+            --secondary: #B45309; /* Dourado/tijolo */
+            --accent: #DC2626; /* Vermelho para urgência */
+            --dark: #111827;
+            --darker: #0F172A;
+            --light: #F8FAFC;
+            --gray: #64748B;
+            --gray-light: #E2E8F0;
+            --white: #FFFFFF;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+            --shadow: 0 10px 25px rgba(0,0,0,0.1);
+            --shadow-lg: 0 20px 40px rgba(0,0,0,0.15);
+            --radius: 8px;
+            --radius-lg: 12px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        /* TIPOGRAFIA */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            letter-spacing: -0.5px;
+        }
+        
+        h2 {
+            font-size: 2.8rem;
+        }
+        
+        h3 {
+            font-size: 2rem;
+        }
+        
+        .lead {
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--gray);
+        }
+        
+        .text-primary {
+            color: var(--primary);
+        }
+        
+        .text-secondary {
+            color: var(--secondary);
+        }
+        
+        /* CONTAINER */
+        .container {
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        
+        /* BOTÕES */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: var(--radius);
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+            box-shadow: 0 8px 20px rgba(30, 58, 138, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(30, 58, 138, 0.4);
+            background: var(--primary-dark);
+        }
+        
+        .btn-whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: var(--white);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+        }
+        
+        .btn-whatsapp:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+        }
+        
+        .btn-accent {
+            background: var(--accent);
+            color: var(--white);
+            box-shadow: 0 8px 20px rgba(220, 38, 38, 0.3);
+        }
+        
+        .btn-accent:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(220, 38, 38, 0.4);
+        }
+        
+        .btn-lg {
+            padding: 20px 40px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        
+        /* BADGES */
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+        
+        .badge-primary {
+            background: rgba(30, 58, 138, 0.1);
+            color: var(--primary);
+            border: 1px solid rgba(30, 58, 138, 0.2);
+        }
+        
+        .badge-accent {
+            background: rgba(220, 38, 38, 0.1);
+            color: var(--accent);
+            border: 1px solid rgba(220, 38, 38, 0.2);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+            padding: 16px 0;
+            transition: var(--transition);
+        }
+        
+        .header-scrolled {
+            box-shadow: var(--shadow-sm);
+            padding: 12px 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+        
+        .logo-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--primary);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+        }
+        
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-main {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 22px;
+            color: var(--primary);
+            line-height: 1;
+        }
+        
+        .logo-sub {
+            font-size: 11px;
+            font-weight: 600;
+            color: var(--gray);
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+        
+        .nav-desktop {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: var(--gray);
+            font-weight: 500;
+            font-size: 15px;
+            transition: var(--transition);
+        }
+        
+        .nav-link:hover {
+            color: var(--primary);
+        }
+        
+        /* HERO SECTION */
+        .hero {
+            padding: 180px 0 100px;
+            background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -30%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(30, 58, 138, 0.05) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+        
+        .hero-badge {
+            margin-bottom: 24px;
+        }
+        
+        .hero h1 {
+            margin-bottom: 24px;
+            line-height: 1.1;
+        }
+        
+        .hero .lead {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            max-width: 700px;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 40px;
+            margin-top: 60px;
+            padding-top: 40px;
+            border-top: 1px solid var(--gray-light);
+        }
+        
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary);
+            line-height: 1;
+        }
+        
+        .stat-label {
+            font-size: 14px;
+            color: var(--gray);
+            margin-top: 8px;
+        }
+        
+        /* COUNTDOWN */
+        .countdown {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(220, 38, 38, 0.1);
+            color: var(--accent);
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        
+        /* SERVICES */
+        .services {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: var(--gray);
+            margin-top: 16px;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-light);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--primary-light);
+        }
+        
+        .service-card.featured {
+            border: 2px solid var(--primary);
+            transform: scale(1.05);
+        }
+        
+        .service-card.featured:hover {
+            transform: scale(1.05) translateY(-10px);
+        }
+        
+        .service-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--secondary);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+            margin-bottom: 25px;
+        }
+        
+        .service-price {
+            margin: 25px 0;
+        }
+        
+        .price-amount {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--dark);
+            line-height: 1;
+        }
+        
+        .price-period {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+        
+        .service-features {
+            list-style: none;
+            margin: 25px 0;
+        }
+        
+        .service-features li {
+            padding: 10px 0;
+            border-bottom: 1px solid var(--gray-light);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .service-features li:last-child {
+            border-bottom: none;
+        }
+        
+        .service-features i {
+            color: var(--primary);
+        }
+        
+        /* ABOUT */
+        .about {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        
+        .about-image {
+            flex: 1;
+            position: relative;
+        }
+        
+        .image-frame {
+            width: 100%;
+            max-width: 400px;
+            height: 500px;
+            background: var(--primary);
+            border-radius: 20px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .image-frame::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: -20px;
+            bottom: -20px;
+            background: var(--secondary);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .oab-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(30, 58, 138, 0.1);
+            padding: 12px 24px;
+            border-radius: 50px;
+            margin: 25px 0;
+        }
+        
+        /* TESTIMONIALS */
+        .testimonials {
+            padding: 100px 0;
+            background: var(--white);
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--gray-light);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 30px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .testimonial-text::before {
+            content: '"';
+            font-size: 80px;
+            color: var(--primary-light);
+            position: absolute;
+            left: -20px;
+            top: -30px;
+            opacity: 0.3;
+            font-family: Georgia, serif;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        
+        .author-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        
+        /* CTA SECTION */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: var(--white);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .cta-section h2 {
+            color: var(--white);
+            margin-bottom: 20px;
+        }
+        
+        .cta-section .lead {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 700px;
+            margin: 0 auto 40px;
+        }
+        
+        /* FAQ */
+        .faq {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 20px;
+            border: 1px solid var(--gray-light);
+            border-radius: var(--radius);
+            overflow: hidden;
+            background: var(--white);
+        }
+        
+        .faq-question {
+            padding: 25px 30px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: var(--transition);
+        }
+        
+        .faq-question:hover {
+            background: rgba(30, 58, 138, 0.05);
+        }
+        
+        .faq-answer {
+            padding: 0 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+        }
+        
+        .faq-answer.active {
+            padding: 25px 30px;
+            max-height: 500px;
+        }
+        
+        /* FOOTER */
+        footer {
+            background: var(--darker);
+            color: var(--white);
+            padding: 80px 0 40px;
+        }
+        
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .footer-column h3 {
+            color: var(--white);
+            margin-bottom: 25px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-column a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .footer-column a:hover {
+            color: var(--white);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 14px;
+        }
+        
+        /* RESPONSIVE */
+        @media (max-width: 1024px) {
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2.4rem; }
+            
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .service-card.featured {
+                transform: none;
+            }
+            
+            .service-card.featured:hover {
+                transform: translateY(-10px);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-desktop {
+                display: none;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                background: none;
+                border: none;
+                font-size: 24px;
+                color: var(--dark);
+                cursor: pointer;
+            }
+            
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            
+            .hero {
+                padding: 140px 0 80px;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 30px;
+                text-align: center;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-card {
+                padding: 30px 20px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.75rem; }
+            
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .price-amount {
+                font-size: 2.5rem;
+            }
+        }
+        
+        /* ANIMAÇÕES */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .animate-fade-in-up {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+                <div class="logo-text">
+                    <div class="logo-main">Dr. [Seu Nome]</div>
+                    <div class="logo-sub">ADVOGADO ESPECIALISTA</div>
+                </div>
+            </a>
+            
+            <nav class="nav-desktop">
+                <a href="#services" class="nav-link">Serviços</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#testimonials" class="nav-link">Depoimentos</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+                <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20uma%20consultoria%20jurídica" 
+                   target="_blank" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Falar Agora
+                </a>
+            </nav>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge badge-accent">
+                        <i class="fas fa-bolt"></i> CONSULTORIA ESPECIALIZADA
+                    </span>
+                </div>
+                
+                <h1>Advogado Especialista em <span class="text-primary">Contratos Empresariais</span></h1>
+                
+                <p class="lead">Proteja seu negócio com contratos seguros e personalizados. Consultoria jurídica especializada para empresas que querem crescer com segurança jurídica.</p>
+                
+                <div class="countdown">
+                    <i class="fas fa-clock"></i>
+                    <span id="countdown-timer">07d 00h 00m</span> para garantir o preço promocional
+                </div>
+                
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
+                    <a href="https://wa.me/SEUNUMERO?text=Olá!%20Gostaria%20de%20agendar%20uma%20CONSULTORIA%20JURÍDICA%20de%20R$297" 
+                       target="_blank" class="btn btn-whatsapp btn-lg">
+                        <i class="fab fa-whatsapp"></i> Agendar Consultoria R$297
+                    </a>
+                    
+                    <a href="#services" class="btn btn-lg" style="background: white; color: var(--primary); border: 2px solid var(--gray-light);">
+                        <i class="fas fa-gavel"></i> Ver Serviços
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Anos de Experiência</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Contratos Elaborados</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">R$10M+</div>
+                        <div class="stat-label">Em Negócios Protegidos</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Serviços <span class="text-primary">Jurídicos Especializados</span></h2>
+                <p class="section-subtitle">Soluções práticas para proteger seu negócio e evitar riscos jurídicos</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Consultoria -->
+                <div class="service-card">
+                    <div class="service-badge">MAIS POPULAR</div>
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Consultoria Jurídica</h3>
+                    <p>Análise completa do seu caso, identificação de riscos e recomendações estratégicas para proteger seu negócio.</p>
+                    
+                    <div class="service-price">
+                        <div class="price-amount">R$297</div>
+                        <div class="price-period">por sessão</div>
+                    </div>
+                    
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Análise de 1 contrato existente</li>
+                        <li><i class="fas fa-check"></i> Checklist de adequação</li>
+                        <li><i class="fas fa-check"></i> Recomendações personalizadas</li>
+                        <li><i class="fas fa-check"></i> Duração: 60 minutos</li>
+                        <li><i class="fas fa-check"></i> Relatório escrito</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/SEUNUMERO?text=Quero%20agendar%20a%20CONSULTORIA%20JURÍDICA%20de%20R$297" 
+                       target="_blank" class="btn btn-primary" style="width: 100%;">
+                        <i class="fab fa-whatsapp"></i> Agendar Consultoria
+                    </a>
+                </div>
+                
+                <!-- Contrato Personalizado -->
+                <div class="service-card featured">
+                    <div class="service-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h3>Contrato Personalizado</h3>
+                    <p>Elaboração de contrato sob medida para seu negócio, com cláusulas específicas para sua realidade.</p>
+                    
+                    <div class="service-price">
+                        <div class="price-amount">R$997</div>
+                        <div class="price-period">por contrato</div>
+                    </div>
+                    
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Elaboração personalizada</li>
+                        <li><i class="fas fa-check"></i> Revisão completa</li>
+                        <li><i class="fas fa-check"></i> Cláusulas específicas</li>
+                        <li><i class="fas fa-check"></i> Garantia de adequação</li>
+                        <li><i class="fas fa-check"></i> Suporte por 30 dias</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/SEUNUMERO?text=Quero%20elaborar%20um%20CONTRATO%20PERSONALIZADO%20de%20R$997" 
+                       target="_blank" class="btn btn-whatsapp btn-lg" style="width: 100%;">
+                        <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+                    </a>
+                </div>
+                
+                <!-- Assinatura Mensal -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Advogado Online</h3>
+                    <p>Acesso mensal ao seu advogado particular. Resposta a dúvidas jurídicas e suporte contínuo.</p>
+                    
+                    <div class="service-price">
+                        <div class="price-amount">R$97</div>
+                        <div class="price-period">por mês</div>
+                    </div>
+                    
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 2 consultas rápidas/mês</li>
+                        <li><i class="fas fa-check"></i> Resposta a dúvidas via WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Análise de cláusulas</li>
+                        <li><i class="fas fa-check"></i> Newsletter jurídica</li>
+                        <li><i class="fas fa-check"></i> Acesso a modelos básicos</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/SEUNUMERO?text=Quero%20assinar%20o%20plano%20ADVOGADO%20ONLINE%20de%20R$97/mês" 
+                       target="_blank" class="btn" style="width: 100%; background: white; color: var(--primary); border: 2px solid var(--gray-light);">
+                        Assinar Plano Mensal
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-frame">
+                        <!-- Substituir por sua foto -->
+                        <div style="width: 100%; height: 100%; background: #e2e8f0; display: flex; align-items: center; justify-content: center; color: var(--gray);">
+                            <i class="fas fa-user-tie" style="font-size: 80px;"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h2>Dr. <span class="text-primary">[Seu Nome]</span></h2>
+                    <p class="lead">Advogado especialista em direito empresarial e contratos com mais de 15 anos de experiência.</p>
+                    
+                    <div class="oab-badge">
+                        <i class="fas fa-id-card"></i>
+                        <span>OAB/XX XXXXXX · Ativo desde 2008</span>
+                    </div>
+                    
+                    <p>Formado pela Universidade [Sua Universidade] com especialização em Direito Empresarial. Atuei em grandes escritórios antes de fundar meu próprio escritório focado em atender pequenas e médias empresas.</p>
+                    
+                    <p style="margin-top: 20px;">Minha missão é democratizar o acesso a serviços jurídicos de qualidade, oferecendo soluções práticas e acessíveis para empresários que querem proteger seus negócios sem gastar fortunas.</p>
+                    
+                    <div style="margin-top: 30px;">
+                        <h4 style="margin-bottom: 15px;">Áreas de Atuação:</h4>
+                        <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                            <span style="background: rgba(30, 58, 138, 0.1); color: var(--primary); padding: 8px 16px; border-radius: var(--radius); font-size: 14px;">Contratos Empresariais</span>
+                            <span style="background: rgba(30, 58, 138, 0.1); color: var(--primary); padding: 8px 16px; border-radius: var(--radius); font-size: 14px;">Sociedades</span>
+                            <span style="background: rgba(30, 58, 138, 0.1); color: var(--primary); padding: 8px 16px; border-radius: var(--radius); font-size: 14px;">Propriedade Intelectual</span>
+                            <span style="background: rgba(30, 58, 138, 0.1); color: var(--primary); padding: 8px 16px; border-radius: var(--radius); font-size: 14px;">Compliance</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que <span class="text-primary">Meus Clientes</span> Dizem</h2>
+                <p class="section-subtitle">Depoimentos reais de empresários que confiaram em meu trabalho</p>
+            </div>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "A consultoria com o Dr. [Seu Nome] me salvou de um contrato que poderia ter custado R$50.000. Sua análise foi minuciosa e as recomendações foram fundamentais."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CR</div>
+                        <div class="author-info">
+                            <h4>Carlos Rodrigues</h4>
+                            <p>CEO - E-commerce de Moda</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Contratei o serviço de contrato personalizado e o resultado foi excelente. O documento foi tão bem feito que meu sócio ficou impressionado. Valeu cada centavo."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div class="author-info">
+                            <h4>Ana Mendes</h4>
+                            <p>Sócia - Agência Digital</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Assino o plano mensal há 6 meses e é incrível ter um advogado disponível sempre que preciso. Resolveu dúvidas que eu nem sabia que tinha."
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RF</div>
+                        <div class="author-info">
+                            <h4>Roberto Ferreira</h4>
+                            <p>Empreendedor - Tech Startup</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Proteja Seu Negócio Hoje Mesmo</h2>
+            <p class="lead">Não espere um problema jurídico para buscar ajuda. A prevenção é sempre mais barata e eficiente.</p>
+            
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin: 40px 0;">
+                <a href="https://wa.me/SEUNUMERO?text=Quero%20AGENDAR%20uma%20CONSULTORIA%20com%20o%20Dr.%20[Seu%20Nome]" 
+                   target="_blank" class="btn btn-whatsapp btn-lg">
+                    <i class="fab fa-whatsapp"></i> Agendar Consultoria
+                </a>
+                
+                <a href="tel:SEUTELEFONE" class="btn btn-accent btn-lg">
+                    <i class="fas fa-phone"></i> Ligar Agora
+                </a>
+            </div>
+            
+            <div style="background: rgba(255,255,255,0.1); padding: 25px; border-radius: var(--radius); max-width: 600px; margin: 0 auto;">
+                <h4 style="color: white; margin-bottom: 15px; text-align: center;">
+                    <i class="fas fa-gift"></i> Oferta Especial para Primeiros Clientes
+                </h4>
+                <p style="color: rgba(255,255,255,0.9); text-align: center;">
+                    <strong>Primeiras 10 consultorias com 30% de desconto:</strong><br>
+                    De R$297 por apenas R$207<br>
+                    + Bônus: Checklist "Proteção Jurídica Completa"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Perguntas <span class="text-primary">Frequentes</span></h2>
+                <p class="section-subtitle">Tire suas dúvidas sobre meus serviços jurídicos</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Como funciona a consultoria de R$297?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Agendamos uma videoconferência de 60 minutos onde analiso seu caso, documento ou dúvida. Durante a sessão, faço perguntas específicas, identifico riscos e dou recomendações práticas. Após a consulta, envio um relatório por email com as principais conclusões e próximos passos.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Qual a diferença entre consultoria e contrato personalizado?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A <strong>consultoria</strong> (R$297) é uma análise e orientação sobre seu caso. O <strong>contrato personalizado</strong> (R$997) é a elaboração completa de um documento jurídico sob medida para sua necessidade específica. Muitos clientes fazem primeiro a consultoria e depois contratam a elaboração do contrato.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Posso cancelar o plano mensal quando quiser?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Não há fidelidade no plano mensal de R$97. Você pode cancelar a qualquer momento através do WhatsApp. O cancelamento é imediato e você não paga nada além dos meses utilizados.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Atende clientes de todo o Brasil?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sim! Atendo clientes de todo o Brasil através de videoconferência. O Direito Civil e Empresarial tem muitas semelhanças em todos os estados. Para questões específicas de legislação estadual, faço a pesquisa necessária sem custo adicional.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Qual a forma de pagamento?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceito PIX, cartão de crédito (até 12x) e transferência bancária. O pagamento é realizado antes da prestação do serviço. Para o plano mensal, a cobrança é recorrente até o cancelamento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section style="padding: 80px 0; background: var(--white); text-align: center;">
+        <div class="container">
+            <h2 style="margin-bottom: 20px;">Pronto para <span class="text-primary">Proteger Seu Negócio</span>?</h2>
+            <p class="lead" style="max-width: 700px; margin: 0 auto 40px;">
+                Não deixe a insegurança jurídica limitar o crescimento do seu negócio. Invista em proteção jurídica de qualidade.
+            </p>
+            
+            <div class="countdown" style="margin: 0 auto 40px; display: inline-flex;">
+                <i class="fas fa-clock"></i>
+                <span id="final-countdown">07d 00h 00m</span> restantes da oferta especial
+            </div>
+            
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
+                <a href="https://wa.me/SEUNUMERO?text=Quero%20a%20CONSULTORIA%20com%2030%%20de%20desconto%20(R$207)%20antes%20que%20acabe!" 
+                   target="_blank" class="btn btn-primary btn-lg">
+                    <i class="fab fa-whatsapp"></i> Consultoria com 30% OFF
+                </a>
+                
+                <a href="https://wa.me/SEUNUMERO?text=Gostaria%20de%20tirar%20algumas%20dúvidas%20antes%20de%20contratar" 
+                   target="_blank" class="btn" style="background: white; color: var(--primary); border: 2px solid var(--gray-light);">
+                    <i class="fas fa-question-circle"></i> Tirar Dúvidas
+                </a>
+            </div>
+            
+            <p style="margin-top: 30px; color: var(--gray); font-size: 14px;">
+                <i class="fas fa-shield-alt"></i> 100% confidencial • <i class="fas fa-clock"></i> Atendimento 24/7 • <i class="fas fa-star"></i> 15 anos de experiência
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="logo" style="margin-bottom: 25px;">
+                        <div class="logo-icon">
+                            <i class="fas fa-balance-scale"></i>
+                        </div>
+                        <div class="logo-text">
+                            <div class="logo-main" style="color: white;">Dr. [Seu Nome]</div>
+                            <div class="logo-sub" style="color: var(--primary-light);">ADVOGADO</div>
+                        </div>
+                    </div>
+                    <p style="color: rgba(255,255,255,0.7); max-width: 300px;">
+                        Advogado especialista em direito empresarial e contratos. Atendimento personalizado e soluções jurídicas práticas para seu negócio.
+                    </p>
+                    <div style="margin-top: 20px;">
+                        <a href="https://wa.me/SEUNUMERO" target="_blank" style="margin-right: 15px; font-size: 20px; color: rgba(255,255,255,0.7);"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" style="margin-right: 15px; font-size: 20px; color: rgba(255,255,255,0.7);"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" style="margin-right: 15px; font-size: 20px; color: rgba(255,255,255,0.7);"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Serviços</h3>
+                    <ul>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Consultoria R$297</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Contrato Personalizado R$997</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Advogado Online R$97/mês</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Sobre Mim</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Depoimentos</a></li>
+                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> Perguntas Frequentes</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Política de Privacidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li><a href="mailto:seuemail@advogado.com.br"><i class="fas fa-envelope"></i> seuemail@advogado.com.br</a></li>
+                        <li><a href="tel:SEUTELEFONE"><i class="fas fa-phone"></i> (XX) XXXX-XXXX</a></li>
+                        <li><a href="https://wa.me/SEUNUMERO" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> [Sua Cidade], [Seu Estado]</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>© 2024 Dr. [Seu Nome] - Advogado. OAB/XX XXXXXX. Todos os direitos reservados.</p>
+                <p style="margin-top: 10px; font-size: 12px; color: rgba(255,255,255,0.5);">
+                    Este site não constitui relação advogado-cliente. Consultoria jurídica não substitui representação legal em processos judiciais.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.getElementById('header');
+            if (window.scrollY > 50) {
+                header.classList.add('header-scrolled');
+            } else {
+                header.classList.remove('header-scrolled');
+            }
+        });
+
+        // Countdown Timer (7 dias)
+        function updateCountdown() {
+            const endDate = new Date();
+            endDate.setDate(endDate.getDate() + 7);
+            
+            const now = new Date();
+            const timeLeft = endDate - now;
+            
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                
+                const format = (num) => num.toString().padStart(2, '0');
+                const countdownText = `${format(days)}d ${format(hours)}h ${format(minutes)}m`;
+                
+                document.querySelectorAll('#countdown-timer, #final-countdown').forEach(el => {
+                    el.textContent = countdownText;
+                });
+            } else {
+                document.querySelectorAll('#countdown-timer, #final-countdown').forEach(el => {
+                    el.textContent = 'Oferta encerrada';
+                });
+            }
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+
+        // FAQ Accordion
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('active');
+                
+                if (answer.classList.contains('active')) {
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+                
+                document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                    if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
+                        otherAnswer.classList.remove('active');
+                        otherAnswer.previousElementSibling.querySelector('i').style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navDesktop = document.querySelector('.nav-desktop');
+        
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const icon = mobileMenuBtn.querySelector('i');
+                
+                if (navDesktop.style.display === 'flex') {
+                    navDesktop.style.display = 'none';
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                } else {
+                    navDesktop.style.display = 'flex';
+                    navDesktop.style.flexDirection = 'column';
+                    navDesktop.style.position = 'absolute';
+                    navDesktop.style.top = '100%';
+                    navDesktop.style.left = '0';
+                    navDesktop.style.right = '0';
+                    navDesktop.style.background = 'white';
+                    navDesktop.style.padding = '30px';
+                    navDesktop.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+                    navDesktop.style.gap = '20px';
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                }
+            });
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerHeight = document.getElementById('header').offsetHeight;
+                    window.scrollTo({
+                        top: targetElement.offsetTop - headerHeight - 20,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    if (window.innerWidth <= 768 && navDesktop.style.display === 'flex') {
+                        navDesktop.style.display = 'none';
+                        mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                        mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+                    }
+                }
+            });
+        });
+
+        // WhatsApp tracking
+        document.querySelectorAll('a[href*="whatsapp"]').forEach(link => {
+            link.addEventListener('click', function() {
+                // Track conversion
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-CONVERSION_ID/LC-IDENTIFIER',
+                        'value': this.textContent.includes('297') ? 297 : 97,
+                        'currency': 'BRL'
+                    });
+                }
+            });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe service cards
+        document.querySelectorAll('.service-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
